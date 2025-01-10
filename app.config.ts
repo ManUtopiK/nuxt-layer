@@ -48,6 +48,25 @@ export default defineAppConfig({
           icon: 'lucide:code',
         }],
       }, {
+        title: 'Docs',
+        links: [{
+          title: 'Getting Started',
+          to: '/getting-started',
+          description: 'Start building your document with shadcn-docs-nuxt',
+          icon: 'lucide:rocket',
+        }, {
+          title: 'API',
+          to: '/api',
+          description: 'Discover the configurations and exposed APIs.',
+          target: '_self',
+          icon: 'lucide:code',
+        }],
+      }, {
+        title: 'Use This Template',
+        to: '/getting-started/installation',
+        target: '_self',
+        showLinkIcon: true,
+      }, {
         title: 'Credits',
         links: [{
           title: 'shadcn-ui',
@@ -70,11 +89,6 @@ export default defineAppConfig({
           description: 'Content made easy for Vue Developers',
           target: '_blank',
         }],
-      }, {
-        title: 'Use This Template',
-        to: '/getting-started/installation',
-        target: '_self',
-        showLinkIcon: true,
       }],
       links: [{
         icon: 'lucide:github',
@@ -187,4 +201,4 @@ export default defineAppConfig({
       inAside: false,
     },
   },
-});
+})
